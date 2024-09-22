@@ -1,29 +1,31 @@
 
 
-* Install docker
+# Install docker
 
-  Visit https://github.com/docker/docker-install (last accessed on August, 22th 2024) and follow the instructions.
+  Visit https://github.com/docker/docker-install (last accessed on September, 22th 2024) and follow the instructions.
 
   /TLDR:/
 
-  #+begin_src sh
+  ```shell
   curl -fsSL https://get.docker.com -o get-docker.sh
   sh get-docker.sh
-  #+end_src
+  ```
 
   /Check:/
 
-  #+begin_src sh :exports both :results output verbatim
+  ```shell
   docker --version
-  #+end_src
+  ```
 
-  #+RESULTS:
-  : Docker version 24.0.7, build 24.0.7-0ubuntu2~22.04.1
+  ```
+  Docker version 24.0.7, build 24.0.7-0ubuntu2~22.04.1
+  ```
 
-* Run QGIS via docker
+# Run QGIS via docker
 
-  #+begin_src sh
-
+  Change directory into the qgis project and from the command line (terminal) execute the following command
+  
+  ```shell
   # https://hub.docker.com/r/qgis/qgis/tags
   # docker pull qgis/qgis:3.38.3-noble
 
@@ -38,4 +40,6 @@
          -v $HOME/.Xauthority:$HOME/.Xauthority \
          qgis/qgis:3.38.3-noble \
          qgis
-  #+end_src
+  ```
+
+  ![Screenshot of QGIS with its Version](./2024-09-22_16:10_.png)
