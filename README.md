@@ -1,27 +1,32 @@
 
+```shell
+uname -smrv
+```
 
-# Install docker
+*Linux 5.15.0-122-generic #132-Ubuntu SMP Thu Aug 29 13:45:52 UTC 2024 x86_64*
+
+
+# Step 1: install docker
 
   Visit https://github.com/docker/docker-install (last accessed on September, 22th 2024) and follow the instructions.
 
-  /TLDR:/
+  *TLDR:*
 
   ```shell
   curl -fsSL https://get.docker.com -o get-docker.sh
   sh get-docker.sh
   ```
 
-  /Check:/
+  **Check:**
 
   ```shell
   docker --version
   ```
 
-  ```
-  Docker version 24.0.7, build 24.0.7-0ubuntu2~22.04.1
-  ```
+  *Docker version 24.0.7, build 24.0.7-0ubuntu2~22.04.1*
+  
 
-# Run QGIS via docker
+# Step 2: run qgis via docker
 
   Change directory into the qgis project and from the command line (terminal) execute the following command
   
